@@ -36,7 +36,7 @@ webhooks:
       namespace: {{ .Release.Namespace | quote }}
       path: /mutate-image-path
       port: {{ .Values.service.port }}
-  failurePolicy: Fail
+  failurePolicy: {{ .Values.imageMutatingWebhookFailurePolicy }}
   name: mimg.kb.io
   namespaceSelector:
     matchExpressions:
