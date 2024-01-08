@@ -188,7 +188,7 @@ service:
   # service.port -- Expose port for WebHook controller
   port: 443
 
-imageMutatingWebhookFailurePolicy: Fail
+imageMutatingWebhookFailurePolicy: Ignore
 
 # harborClass -- Class name of the Harbor operator
 harborClass: ""
